@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 body, html {
+  font-family: "Open Sans", sans-serif;
   background-color: #191414;
   height: 98%;
   overflow-y: hidden;
@@ -39,7 +39,6 @@ span {
 }
 
 .left {
-  font-family: "Quicksand", sans-serif;
   text-align: center;
   width: 500px;
   position: absolute;
@@ -73,7 +72,6 @@ span {
 }
 
 .container {
-  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,5 +80,4 @@ span {
 
 #discord {
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
 }
