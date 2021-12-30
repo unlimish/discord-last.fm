@@ -1,2 +1,3 @@
-# discord-last.fm
-A simple Discord RPC for Last.fm
+# Discord Last.fm
+
+🎵 A simple Discord RPC for Last.fm

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+body, html {
+  background-color: #191414;
+  height: 98%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+span {
+  color: white;
+  filter: drop-shadow(0 0 0.15rem black);
+}
+
+#tName {
+  font-size: 150%;
+}
+
+#tArtist {
+  font-size: 100%;
+}
+
+#tAlbumImg {
+  width: 250px;
+  height: 250px;
+  filter: drop-shadow(0 0 0.3rem white);
+  padding-top: 15px;
+  border-radius: 12%; 
+}
+
+#pLargeImg {
+  float:left;
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 0 0.3rem white);
+  padding-top: 15px;
+  border-radius: 12%; 
+}
+
+.left {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  text-align: center;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.bgImg {
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 98vh;
+  width: 100%;
+}
+
+.blur {
+  backdrop-filter: blur(20px);
+  height: 98vh;
+  width: 100%;
+}
+
+.container {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#discord {
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+}

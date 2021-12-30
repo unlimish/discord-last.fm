@@ -1,0 +1,20 @@
+{
+  "name": "discord-last-fm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=img/icon.icns --prune=true --out=release-builds",
+    "package-win": "npx electron-packager . --overwrite --icon=img/icon.ico",
+    "package-linux": "electron-packager . discord-last.fm --overwrite --platform=linux --arch=x64 --icon=img/icon.png --prune=true --out=release-builds"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "electron": "^16.0.5",
+    "electron-packager": "^15.4.0",
+    "lastfm": "^0.9.3"
+  }
+}
