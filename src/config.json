@@ -1,8 +1,8 @@
 {
     "lastfm": {
-        "apiKey": "",
-        "secret": "",
-        "username": ""
+        "apiKey": "Replace with your own api key.",
+        "secret": "Replace with your own secret key.",
+        "username": "Replace with your own last.fm username."
     },
     "discord": {
         "largeImage": "apple-music",
