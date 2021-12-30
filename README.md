@@ -115,7 +115,7 @@ npm run package-mac
 npm run package-linux
 ```
 
-Once the command run, you'll see a new folder called "release-builds".
+Once the command run, you'll see a new folder called "release-builds" (only on macOS and Linux).
 
 In there you'll see the "fullscreen-spotify" application!
 
