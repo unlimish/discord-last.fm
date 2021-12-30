@@ -14,49 +14,55 @@ function createWindow() {
     autoHideMenuBar: true,
   });
 
-  mainWindow.hide()
+  mainWindow.hide();
 
   var icon = null;
 
-  function getIcon(){
-    if (process.platform === 'win32') {
-      icon = 'icon.png'
+  function getIcon() {
+    if (process.platform === "win32") {
+      icon = "icon.png";
     } else {
       if (nativeTheme.shouldUseDarkColors === true) {
-        icon = 'icon-light@3x.png';
+        icon = "icon-light@3x.png";
       } else {
-        icon = 'icon-dark@3x.png';
+        icon = "icon-dark@3x.png";
       }
     }
-  };
+  }
 
-  getIcon()
+  getIcon();
 
   appIcon = new Tray(path.join(__dirname + "/img/" + icon));
 
   var iconMenu = Menu.buildFromTemplate([
-    { label: 'Show App', click:  function(){
+    {
+      label: "Show App",
+      click: function () {
         mainWindow.show();
-    } },
-    { label: 'Quit', click:  function(){
+      },
+    },
+    {
+      label: "Quit",
+      click: function () {
         app.isQuiting = true;
         mainWindow.destroy();
         app.quit();
-    } }
+      },
+    },
   ]);
 
-  mainWindow.on("minimize", function (event){
+  mainWindow.on("minimize", function (event) {
     event.preventDefault();
     mainWindow.hide();
   });
 
-  mainWindow.on('close', function (event) {
+  mainWindow.on("close", function (event) {
     event.preventDefault();
-    mainWindow.hide()
+    mainWindow.hide();
     return false;
   });
 
-  appIcon.setToolTip('Discord Last.fm');
+  appIcon.setToolTip("Discord Last.fm");
   appIcon.setContextMenu(iconMenu);
 
   mainWindow.loadFile("index.html");
@@ -64,7 +70,7 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
-  if (app.dock) app.dock.hide(); 
+  if (app.dock) app.dock.hide();
   app.on("activate", function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });

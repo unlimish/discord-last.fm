@@ -1,8 +1,8 @@
-const {lastfm, discord} = require("./src/config.json");
+const { lastfm, discord } = require("./src/config.json");
 const { LastFmNode } = require("lastfm");
-const {Client} = require("discord-rpc");
+const { Client } = require("discord-rpc");
 
-const rpc = new Client({transport:"ipc"});
+const rpc = new Client({ transport: "ipc" });
 
 const l = new LastFmNode({
   api_key: lastfm.apiKey,
@@ -37,14 +37,14 @@ window.addEventListener("DOMContentLoaded", () => {
     replaceText("pName", `🎵 ${track.name}`);
     replaceText("pArtist", `👤 ${track.artist["#text"]}`);
     replaceText("pAlbum", `💿 ${track.album["#text"]}`);
-    
+
     //RPC
     rpc.setActivity({
-        details: `🎵 ${track.name}`,
-        state: `👤 ${track.artist["#text"]}`,
-        largeImageKey: discord.largeImage,
-        largeImageText: `💿 ${track.album["#text"]}`,
-        startTimestamp: Date.now(),
+      details: `🎵 ${track.name}`,
+      state: `👤 ${track.artist["#text"]}`,
+      largeImageKey: discord.largeImage,
+      largeImageText: `💿 ${track.album["#text"]}`,
+      startTimestamp: Date.now(),
     });
   });
 

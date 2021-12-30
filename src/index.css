@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 
 body, html {
   font-family: "Open Sans", sans-serif;
@@ -26,16 +26,16 @@ span {
   height: 250px;
   filter: drop-shadow(0 0 0.3rem white);
   padding-top: 15px;
-  border-radius: 12%; 
+  border-radius: 12%;
 }
 
 #pLargeImg {
-  float:left;
+  float: left;
   width: 100px;
   height: 100px;
   filter: drop-shadow(0 0 0.3rem white);
   padding-top: 15px;
-  border-radius: 12%; 
+  border-radius: 12%;
 }
 
 .left {
