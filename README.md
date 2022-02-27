@@ -1,21 +1,12 @@
-![banner](https://raw.githubusercontent.com/bgpvp/discord-last.fm/main/img/banner.png)
+![banner](https://i.imgur.com/eF2ahzM.png)
 
 ## 🎵 A simple Discord RPC for Last.fm
-
 
 # Steps:
 
 ## Step 1: Clone the repository.
 
-Either download the zip by clicking on the green button that says "Code" and then clicking on "Download ZIP" (or even [this link](https://github.com/bgpvp/discord-last.fm/archive/refs/heads/main.zip))
-
-or
-
-Clone this repository by using a command line:
-
-```bash
-> git clone https://github.com/bgpvp/discord-last.fm/
-```
+Clone this repository
 
 ## Step 2: Last.fm Scrobbler
 
@@ -35,7 +26,7 @@ Download the Last.fm scrobbler by clicking on this link: https://last.fm/about/t
 
 Launch the scrobbler and log into your profile.
 
-Leave the scrobbler open for [Discord-Last.fm](https://github.com/bgpvp/discord-last.fm) to work.
+Leave the scrobbler open for Discord-Last.fm to work.
 
 (You can leave it in the taskbar but make sure to not close it.)
 
@@ -117,8 +108,8 @@ npm run package-linux
 
 Once the command run, you'll see a new folder called "release-builds" (only on macOS and Linux).
 
-In there you'll see the "fullscreen-spotify" application!
+In there you'll see the "discord-last.fm" application!
 
-Run it and enjoy your fullscreen spotify!
+Run it and enjoy your Discord RPC!
 
 # Don't forget to :star: this repo!
