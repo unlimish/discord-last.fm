@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "discord-rpc": "^4.0.1",
-    "electron": "^16.0.5",
+    "electron": "^16.0.6",
     "electron-packager": "^15.4.0",
     "lastfm": "^0.9.3"
   }
