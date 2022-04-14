@@ -1,5 +1,5 @@
 const { lastfm, discord } = require("./src/config.json");
-const { LastFmNode } = require("lastfm");
+const { LastFmNode } = require("@wheredidhugo/lastfm");
 const { Client } = require("discord-rpc");
 
 const rpc = new Client({ transport: "ipc" });
